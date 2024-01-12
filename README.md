@@ -61,10 +61,9 @@
     <p>Fitrotin Nadzilah - Hipster</p>
     <p>Fernanda Manuel - Hustler</p>
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Mental-Zone/mental-zone"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://beautiful-klepon-ada072.netlify.app/">View Demo</a>
   </p>
 </div>
 
