@@ -5,6 +5,7 @@ import 'package:mental_zone/pages/onboarding_screen/intro_page3.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnBoardingScreen extends StatefulWidget {
+  static const routeName = '/';
   const OnBoardingScreen({Key? key}) : super(key: key);
 
   @override
@@ -113,6 +114,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         ? ElevatedButton(
                             onPressed: () {
                               // Handle Register button press
+                              Navigator.pushNamed(context, '/home');
                             },
                             child: Text(
                               'Login',
@@ -133,9 +135,8 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         : ElevatedButton(
                             onPressed: () {
                               _controller.nextPage(
-                                duration: Duration(milliseconds: 500), 
-                                curve: Curves.easeIn
-                                );
+                                  duration: Duration(milliseconds: 500),
+                                  curve: Curves.easeIn);
                             },
                             child: Text(
                               'Next',

@@ -20,8 +20,9 @@ class MyApp extends StatelessWidget {
           useMaterial3: true,
         ),
         // initialRoute: HomePage.routeName,
-        home: OnBoardingScreen(),
+        initialRoute: OnBoardingScreen.routeName,
         routes: {
+          OnBoardingScreen.routeName: (context) => const OnBoardingScreen(),
           HomePage.routeName: (context) => const HomePage(),
           ChatPage.routeName: (context) => const ChatPage(),
         });

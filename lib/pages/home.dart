@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../utils/app_styles.dart';
 
 class HomePage extends StatelessWidget {
-  static const routeName = '/';
+  static const routeName = '/home';
   const HomePage({super.key});
 
   @override
