@@ -7,7 +7,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../utils/app_styles.dart';
 
 class HomePage extends StatelessWidget {
-  static const routeName = '/home';
+  static const routeName = '/';
   const HomePage({super.key});
 
   @override
@@ -24,7 +24,7 @@ class HomePage extends StatelessWidget {
                 const Gap(37),
                 _moodRow(),
                 const Gap(15),
-                _menuRow()
+                _menuRow(context)
               ],
             ),
           )
@@ -33,7 +33,7 @@ class HomePage extends StatelessWidget {
     );
   }
 
-  Column _menuRow() {
+  Column _menuRow(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -100,7 +100,9 @@ class HomePage extends StatelessWidget {
                     ),
                     child: IconButton(
                       icon: Image.asset('assets/img/menzai.png'),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/menzai');
+                      },
                     )),
                 const Gap(4),
                 Text(
