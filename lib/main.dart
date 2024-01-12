@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mental_zone/pages/onboarding_controller.dart';
 import 'package:mental_zone/pages/home.dart';
 
 void main() {
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        initialRoute: HomePage.routeName,
+        // initialRoute: HomePage.routeName,
+        home: OnBoardingScreen(),
         routes: {
           HomePage.routeName: (context) => const HomePage(),
         });
