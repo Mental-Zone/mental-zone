@@ -3,10 +3,10 @@
 ## Description
 
 ## Screen Shoot
-<img src="assets/img/screenshoot1.jpeg" alt="Deskripsi gambar">
-<img src="assets/img/screenshoot2.jpeg" alt="Deskripsi gambar">
-<img src="assets/img/screenshoot3.jpeg" alt="Deskripsi gambar">
-<img src="assets/img/screenshoot4.jpeg" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/screenshoot1.jpeg" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/screenshoot2.jpeg" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/screenshoot3.jpeg" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/screenshoot4.jpeg" alt="Deskripsi gambar">
 
 ## Getting Started
 
