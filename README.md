@@ -54,8 +54,18 @@
   
 ![Vector](https://github.com/Mental-Zone/mental-zone/assets/67546532/b3f0139f-f90a-4f25-8098-f72e736b412d)
 
-<a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
-
+<p align="center">
+    Made with <3 by:
+    <p>Firstki Aditya - Hacker</p>
+    <p>Endra Lazuardi - Hacker</p>
+    <p>Fitrotin Nadzilah - Hipster</p>
+    <p>Fernanda Manuel - Hustler</p>
+    <br />
+    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://beautiful-klepon-ada072.netlify.app/">View Demo</a>
+  </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
