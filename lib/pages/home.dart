@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:mental_zone/shared/theme/color.dart';
+import 'package:mental_zone/shared/theme/font.dart';
 
 import '../utils/app_styles.dart';
 
@@ -16,6 +18,7 @@ class HomePage extends StatelessWidget {
       body: ListView(
         children: [
           Container(
+            color: Colors.white,
             padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -42,7 +45,7 @@ class HomePage extends StatelessWidget {
           style: GoogleFonts.montserrat(
               fontSize: 14, fontWeight: FontWeight.w600, color: Colors.black),
         ),
-        const Gap(12),
+        const Gap(10),
         Text("Menzo akan membantu menyelesaikan keluhmu",
             style: GoogleFonts.montserrat(
               fontSize: 12,
@@ -69,17 +72,13 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/counseling.png'),
+                      icon: Image.asset('assets/img/home/counseling.png'),
                       onPressed: () {},
                     )),
                 const Gap(4),
                 Text(
                   "Counseling",
-                  style: GoogleFonts.montserrat(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w400,
-                    color: Color(0xFF605B57),
-                  ),
+                  style: label,
                 )
               ],
             ),
@@ -99,7 +98,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/menzai.png'),
+                      icon: Image.asset('assets/img/home/menzai.png'),
                       onPressed: () {
                         Navigator.pushNamed(context, '/menzai');
                       },
@@ -107,11 +106,7 @@ class HomePage extends StatelessWidget {
                 const Gap(4),
                 Text(
                   "Menzai",
-                  style: GoogleFonts.montserrat(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w400,
-                    color: Color(0xFF605B57),
-                  ),
+                  style: label,
                 )
               ],
             ),
@@ -131,17 +126,13 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/care.png'),
+                      icon: Image.asset('assets/img/home/care.png'),
                       onPressed: () {},
                     )),
                 const Gap(4),
                 Text(
                   "Self Care",
-                  style: GoogleFonts.montserrat(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w400,
-                    color: Color(0xFF605B57),
-                  ),
+                  style: label,
                 )
               ],
             ),
@@ -161,17 +152,13 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/book.png'),
+                      icon: Image.asset('assets/img/home/book.png'),
                       onPressed: () {},
                     )),
                 const Gap(4),
                 Text(
                   "Journey",
-                  style: GoogleFonts.montserrat(
-                    fontSize: 10,
-                    fontWeight: FontWeight.w400,
-                    color: Color(0xFF605B57),
-                  ),
+                  style: label,
                 )
               ],
             ),
@@ -212,16 +199,11 @@ class HomePage extends StatelessWidget {
                     height: 48,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black.withOpacity(0.08),
-                            blurRadius: 15,
-                            offset: Offset(0, 2))
-                      ],
-                      border: Border.all(color: Color(0xFFCCF1F8), width: 1),
+                      border: Border.all(
+                          color: primaryColor.withOpacity(0.5), width: 1),
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/angy.png'),
+                      icon: Image.asset('assets/img/home/angy.png'),
                       onPressed: () {},
                     )),
                 Container(
@@ -229,16 +211,11 @@ class HomePage extends StatelessWidget {
                     height: 48,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black.withOpacity(0.08),
-                            blurRadius: 15,
-                            offset: Offset(0, 2))
-                      ],
-                      border: Border.all(color: Color(0xFFCCF1F8), width: 1),
+                      border: Border.all(
+                          color: primaryColor.withOpacity(0.5), width: 1),
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/sad.png'),
+                      icon: Image.asset('assets/img/home/sad.png'),
                       onPressed: () {},
                     )),
                 Container(
@@ -246,16 +223,11 @@ class HomePage extends StatelessWidget {
                     height: 48,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black.withOpacity(0.08),
-                            blurRadius: 15,
-                            offset: Offset(0, 2))
-                      ],
-                      border: Border.all(color: Color(0xFFCCF1F8), width: 1),
+                      border: Border.all(
+                          color: primaryColor.withOpacity(0.5), width: 1),
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/confused.png'),
+                      icon: Image.asset('assets/img/home/confused.png'),
                       onPressed: () {},
                     )),
                 Container(
@@ -263,16 +235,11 @@ class HomePage extends StatelessWidget {
                     height: 48,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black.withOpacity(0.08),
-                            blurRadius: 15,
-                            offset: Offset(0, 2))
-                      ],
-                      border: Border.all(color: Color(0xFFCCF1F8), width: 1),
+                      border: Border.all(
+                          color: primaryColor.withOpacity(0.5), width: 1),
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/hepi.png'),
+                      icon: Image.asset('assets/img/home/hepi.png'),
                       onPressed: () {},
                     )),
                 Container(
@@ -280,16 +247,11 @@ class HomePage extends StatelessWidget {
                     height: 48,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(8),
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black.withOpacity(0.08),
-                            blurRadius: 15,
-                            offset: Offset(0, 2))
-                      ],
-                      border: Border.all(color: Color(0xFFCCF1F8), width: 1),
+                      border: Border.all(
+                          color: primaryColor.withOpacity(0.5), width: 1),
                     ),
                     child: IconButton(
-                      icon: Image.asset('assets/img/lovely.png'),
+                      icon: Image.asset('assets/img/home/lovely.png'),
                       onPressed: () {},
                     )),
               ],
@@ -312,9 +274,9 @@ class HomePage extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                   color: Color(0xFF1D62FC),
                   image: DecorationImage(
-                      image: AssetImage('assets/img/ava.png'),
+                      image: AssetImage('assets/img/home/ava2.png'),
                       alignment: Alignment.bottomCenter,
-                      fit: BoxFit.fitWidth)),
+                      fit: BoxFit.scaleDown)),
             ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
