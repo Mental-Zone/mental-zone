@@ -200,6 +200,7 @@ class _ChatPageState extends State<ChatPage> {
                 color: primaryColor,
                 image: DecorationImage(
                   image: AssetImage('assets/img/robot.png'),
+                  fit: BoxFit.cover,
                   alignment: Alignment.bottomCenter,
                 )),
           ),
