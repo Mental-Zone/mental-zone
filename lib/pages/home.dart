@@ -27,12 +27,92 @@ class HomePage extends StatelessWidget {
                 const Gap(37),
                 _moodRow(),
                 const Gap(15),
-                _menuRow(context)
+                _menuRow(context),
+                const Gap(20),
+                _meditateRow()
               ],
             ),
           )
         ],
       ),
+    );
+  }
+
+  Column _meditateRow() {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          "Yuk Mulai Meditasimu",
+          style: GoogleFonts.montserrat(
+              fontSize: 14, fontWeight: FontWeight.w600, color: Colors.black),
+        ),
+        const Gap(10),
+        Text("Buat harimu lebih tenang dan damai",
+            style: GoogleFonts.montserrat(
+              fontSize: 12,
+              fontWeight: FontWeight.w400,
+              color: Colors.black,
+            )),
+        const Gap(12),
+        Container(
+          padding: EdgeInsets.all(12),
+          width: double.infinity,
+          decoration: BoxDecoration(
+              color: primaryColor, borderRadius: BorderRadius.circular(16)),
+          child: Row(children: [
+            Image.asset(
+              'assets/img/home/sleep.png',
+              width: 56,
+              height: 56,
+            ),
+            const Gap(16),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Text(
+                      'Tidur Nyeyak',
+                      style: GoogleFonts.montserrat(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w600,
+                          color: Colors.white),
+                    ),
+                    const Gap(5),
+                    Text(
+                      '• 3 sesi',
+                      style: GoogleFonts.montserrat(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white),
+                    ),
+                  ],
+                ),
+                Text(
+                  'Istirahat yang berkualitas',
+                  style: GoogleFonts.montserrat(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w400,
+                      color: Colors.white),
+                )
+              ],
+            ),
+            const Gap(48),
+            Container(
+                width: 32,
+                height: 32,
+                decoration: BoxDecoration(
+                    color: Color(0xFF417CFF),
+                    borderRadius: BorderRadius.circular(12)),
+                child: Icon(
+                  Icons.keyboard_arrow_down,
+                  color: Colors.white,
+                  size: 20,
+                )),
+          ]),
+        )
+      ],
     );
   }
 
