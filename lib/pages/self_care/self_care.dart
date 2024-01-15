@@ -7,7 +7,7 @@ import '../../shared/theme/color.dart';
 import '../../shared/theme/font.dart';
 
 class selfCarePage extends StatefulWidget {
-  static const routeName = '/selfCare';
+  static const routeName = '/self_care';
   const selfCarePage({super.key});
 
   @override
@@ -41,11 +41,30 @@ class _selfCarePageState extends State<selfCarePage> {
               const Gap(18),
               _meditationItem('Tidur Nyenyak', 3, 'Istirahat yang berkualitas',
                   'assets/img/self_care/sleep.png'),
+              const Gap(18),
               _meditationItem(
                   'Belajar Meditasi',
                   4,
                   'Meditasi sederhana & mudah',
                   'assets/img/self_care/meditate.png'),
+              const Gap(18),
+              _meditationItem(
+                  'Kesehatan Fisik',
+                  3,
+                  'Menyehatkan pikiran dan tubuh',
+                  'assets/img/self_care/workout.png'),
+              const Gap(18),
+              _meditationItem(
+                  'Diri yang lebih baik',
+                  3,
+                  'Mulai mencintai diri sendiri',
+                  'assets/img/self_care/selflove.png'),
+              const Gap(18),
+              _meditationItem(
+                  'Stress & Kecemasan',
+                  4,
+                  'Mulai mencintai diri sendiri',
+                  'assets/img/self_care/meditate.png')
             ]),
           )
         ],
@@ -76,7 +95,7 @@ class _selfCarePageState extends State<selfCarePage> {
               fit: BoxFit.cover,
             ),
           ),
-          const Gap(19),
+          const Gap(15),
           Flexible(
             fit: FlexFit.loose,
             child: Row(
