@@ -27,19 +27,47 @@ class CounselingDetails extends StatelessWidget {
               _doctorBanner(),
               _doctorLabel(),
               const Gap(27),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  _icon('100+', 'Patients', IconlyBold.user_2),
-                  _icon('5+', 'Years expert', IconlyBold.activity),
-                  _icon('4.9', 'Rating', IconlyBold.star),
-                  _icon('100+', 'Reviews', IconlyBold.chat),
-                ],
+              _iconRow(),
+              const Gap(27),
+              Text('About Me', style: sectionHeader),
+              const Gap(8),
+              Text(
+                'Friska S.Psi adalah seorang psikolog berpengalaman dengan latar belakang pendidikan yang kuat di bidang psikologi klinis. Ia memegang gelar Magister Psikologi dan telah mendapatkan gelar doktor di bidang yang sama dari Universitas Psikologi Terkemuka',
+                textAlign: TextAlign.justify,
+                style: GoogleFonts.montserrat(
+                  fontSize: 12,
+                  color: Color(0xFF878787),
+                  fontWeight: FontWeight.w400,
+                ),
+              ),
+              const Gap(8),
+              Text('Specialization', style: sectionHeader),
+              const Gap(8),
+              Text(
+                'Dengan keahlian utama dalam konseling individu dan kelompok, Friska memiliki pemahaman mendalam tentang berbagai isu psikologis seperti stres, kecemasan, depresi, dan masalah hubungan. Ia juga memiliki keahlian dalam menangani masalah kepercayaan diri, pengembangan pribadi, dan manajemen konflik',
+                textAlign: TextAlign.justify,
+                style: GoogleFonts.montserrat(
+                  fontSize: 12,
+                  color: Color(0xFF878787),
+                  fontWeight: FontWeight.w400,
+                ),
               )
             ],
           ),
         )
       ]),
+    );
+  }
+
+  Row _iconRow() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        _icon('100+', 'Patients', IconlyBold.user_2),
+        _icon('5+', 'Years expert', IconlyBold.activity),
+        _icon('4.9', 'Rating', IconlyBold.star),
+        _icon('100+', 'Reviews', IconlyBold.chat),
+      ],
     );
   }
 
