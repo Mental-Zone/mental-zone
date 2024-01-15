@@ -99,12 +99,6 @@ class _CounselingPageState extends State<CounselingPage> {
                         style: sectionHeader,
                       ),
                     ),
-                    // IconButton(
-                    //   icon: Icon(IconlyBold.heart),
-                    //   color: primaryColor,
-                    //   onPressed: () {},
-                    //   iconSize: 20,
-                    // )
                     Icon(
                       IconlyBold.heart,
                       color: primaryColor,
