@@ -4,6 +4,7 @@ import 'package:mental_zone/pages/counseling/counselingDetails.dart';
 import 'package:mental_zone/pages/onboarding_controller.dart';
 import 'package:mental_zone/pages/chat.dart';
 import 'package:mental_zone/pages/home.dart';
+import 'package:mental_zone/pages/self_care/self_care.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,6 +30,7 @@ class MyApp extends StatelessWidget {
           ChatPage.routeName: (context) => const ChatPage(),
           CounselingPage.routeName: (context) => const CounselingPage(),
           CounselingDetails.routeName: (context) => const CounselingDetails(),
+          selfCarePage.routeName: (context) => const selfCarePage(),
         });
   }
 }
