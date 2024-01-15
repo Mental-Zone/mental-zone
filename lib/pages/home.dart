@@ -153,7 +153,9 @@ class HomePage extends StatelessWidget {
                     ),
                     child: IconButton(
                       icon: Image.asset('assets/img/home/counseling.png'),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/counseling');
+                      },
                     )),
                 const Gap(4),
                 Text(
