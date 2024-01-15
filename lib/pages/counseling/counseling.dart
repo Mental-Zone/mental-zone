@@ -90,9 +90,14 @@ class _CounselingPageState extends State<CounselingPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Text(
-                      'Chrysti Denie, S.Psi',
-                      style: sectionHeader,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/counseling/details');
+                      },
+                      child: Text(
+                        'Chrysti Denie, S.Psi',
+                        style: sectionHeader,
+                      ),
                     ),
                     // IconButton(
                     //   icon: Icon(IconlyBold.heart),
@@ -212,7 +217,11 @@ class _CounselingPageState extends State<CounselingPage> {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Icon(Icons.arrow_back),
+        GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/home');
+            },
+            child: Icon(Icons.arrow_back)),
         Text(
           'Counseling',
           style: sectionHeader,
