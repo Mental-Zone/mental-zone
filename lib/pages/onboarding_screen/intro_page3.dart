@@ -40,12 +40,19 @@ class IntroPage3 extends StatelessWidget {
                 ),
                 //headline
                 Text(
-                  "Konseling Online Praktis",
-                  style: headline,
+                  "Convenient Online Counseling",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                  color: Color(0xFF1D1D1D),
+                  fontSize: 20,
+                  fontFamily: 'Montserrat',
+                  fontWeight: FontWeight.w600,
+                  height: 0,
+                  ),
                 ),
                 //descriotion
                 Text(
-                    'Terhubung dengan ahli melalui ponsel tanpa repot dan menunggu lama',
+                    'Reach out to a real expert, from the comfort of your phone',
                     textAlign: TextAlign.center,
                     style: headlineParagraph)
               ],

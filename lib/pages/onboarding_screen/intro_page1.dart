@@ -40,12 +40,12 @@ class IntroPage1 extends StatelessWidget {
                 ),
                 //headline
                 Text(
-                  "Dukungan Penuh Makna",
+                  "Get Meaningful Support",
                   style: headline,
                 ),
                 //descriotion
                 Text(
-                    'Jalani hari-hari dan jadi dirimu sendiri dengan dukungan dari sahabat',
+                    'Live your days and be yourself with the support of friends',
                     textAlign: TextAlign.center,
                     style: headlineParagraph),
               ],
