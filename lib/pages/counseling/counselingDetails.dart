@@ -59,21 +59,23 @@ class CounselingDetails extends StatelessWidget {
       floatingActionButton: Padding(
         padding: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
         child: ElevatedButton(
-            onPressed: () {},
-            child: Text(
-              "Make an appointment",
-              style: GoogleFonts.montserrat(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.white),
-            ),
+            onPressed: () {
+              Navigator.pushNamed(context, '/counseling/appointment');
+            },
             style: ElevatedButton.styleFrom(
                 backgroundColor: primaryColor,
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(12),
                 ),
                 padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
-                minimumSize: Size(double.infinity, 36))),
+                minimumSize: Size(double.infinity, 36)),
+            child: Text(
+              "Make an appointment",
+              style: GoogleFonts.montserrat(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white),
+            )),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
