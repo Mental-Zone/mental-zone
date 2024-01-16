@@ -27,9 +27,9 @@ class HomePage extends StatelessWidget {
                 _profileRow(),
                 const Gap(37),
                 _moodRow(),
-                const Gap(15),
+                const Gap(21),
                 _menuRow(context),
-                const Gap(20),
+                const Gap(21),
                 _meditateRow()
               ],
             ),
@@ -66,18 +66,9 @@ class HomePage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "Yuk Mulai Meditasimu",
-          style: GoogleFonts.montserrat(
-              fontSize: 14, fontWeight: FontWeight.w600, color: Colors.black),
-        ),
+        Text("Lets start your meditation!", style: sectionHeader),
         const Gap(10),
-        Text("Buat harimu lebih tenang dan damai",
-            style: GoogleFonts.montserrat(
-              fontSize: 12,
-              fontWeight: FontWeight.w400,
-              color: Colors.black,
-            )),
+        Text("Make your day calmer and more peaceful", style: paragraph),
         const Gap(12),
         Container(
           padding: EdgeInsets.all(12),
@@ -97,7 +88,7 @@ class HomePage extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'Tidur Nyeyak',
+                      'Deep Sleep',
                       style: GoogleFonts.montserrat(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
@@ -105,7 +96,7 @@ class HomePage extends StatelessWidget {
                     ),
                     const Gap(5),
                     Text(
-                      '• 3 sesi',
+                      '• 3 session',
                       style: GoogleFonts.montserrat(
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
@@ -114,7 +105,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 Text(
-                  'Istirahat yang berkualitas',
+                  'Get quality rest',
                   style: GoogleFonts.montserrat(
                       fontSize: 12,
                       fontWeight: FontWeight.w400,
@@ -144,18 +135,9 @@ class HomePage extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          "Apa yang kamu butuhkan?",
-          style: GoogleFonts.montserrat(
-              fontSize: 14, fontWeight: FontWeight.w600, color: Colors.black),
-        ),
+        Text("What do you need?", style: sectionHeader),
         const Gap(10),
-        Text("Menzo akan membantu menyelesaikan keluhmu",
-            style: GoogleFonts.montserrat(
-              fontSize: 12,
-              fontWeight: FontWeight.w400,
-              color: Colors.black,
-            )),
+        Text("Menzo will help resolve your problems", style: paragraph),
         const Gap(12),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -288,13 +270,14 @@ class HomePage extends StatelessWidget {
                   offset: Offset(0, 2))
             ]),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              'Bagaimana Perasaanmu hari ini?',
-              style: GoogleFonts.montserrat(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600,
-                  color: Colors.black),
+            Padding(
+              padding: const EdgeInsets.only(left: 14),
+              child: Text(
+                'How are you feeling today?',
+                style: sectionHeader,
+              ),
             ),
             const Gap(18),
             Row(
