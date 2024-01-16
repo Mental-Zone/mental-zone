@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -50,11 +50,38 @@ class _AppointmentPageState extends State<AppointmentPage> {
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const Gap(25),
                     _navbar(context),
                     const Gap(50),
                     _doctorCard(),
+                    const Gap(37),
+                    Text(
+                      "Customize your schedule",
+                      style: sectionHeader,
+                    ),
+                    const Gap(5),
+                    Text(
+                      "Choose a date and time for consultation",
+                      style: paragraph,
+                    ),
+                    const Gap(24),
+                    Column(
+                      children: [
+                        Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text('Choose a date', style: paragraph),
+                              Text("January 2024 > ",
+                                  style: GoogleFonts.montserrat(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w500,
+                                      color: primaryColor))
+                            ]),
+                        const Gap(10)
+                      ],
+                    )
                   ],
                 ),
               )
