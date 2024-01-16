@@ -37,12 +37,12 @@ class _CounselingPageState extends State<CounselingPage> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Konsultasi online dengan ahli!",
+                        "Online consultation with an exepert!",
                         style: sectionHeader,
                       ),
                       const Gap(10),
                       Text(
-                        'Temukan dan pilih konselor yang kamu rasa sesuai!',
+                        'Find and choose a counselor that you feel comfortable',
                         style: paragraph,
                       ),
                       const Gap(37),
@@ -120,7 +120,7 @@ class _CounselingPageState extends State<CounselingPage> {
                           color: primaryColor),
                     ),
                     Text(
-                      ' Kendali Emosi',
+                      ' Control Emotions',
                       style: GoogleFonts.montserrat(
                           fontSize: 12,
                           fontWeight: FontWeight.w400,
