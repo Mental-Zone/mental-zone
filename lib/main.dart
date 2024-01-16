@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mental_zone/pages/counseling/counseling.dart';
 import 'package:mental_zone/pages/counseling/counselingDetails.dart';
+import 'package:mental_zone/pages/counseling/counseling_appointment.dart';
 import 'package:mental_zone/pages/onboarding_controller.dart';
 import 'package:mental_zone/pages/loginScreen.dart';
 import 'package:mental_zone/pages/registerScreen.dart';
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
           CounselingPage.routeName: (context) => const CounselingPage(),
           CounselingDetails.routeName: (context) => const CounselingDetails(),
           selfCarePage.routeName: (context) => const selfCarePage(),
+          AppointmentPage.routeName: (context) => const AppointmentPage(),
         });
   }
 }
