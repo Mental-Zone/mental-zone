@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:iconly/iconly.dart';
 import 'package:mental_zone/shared/theme/color.dart';
 import 'package:mental_zone/shared/theme/font.dart';
 
@@ -35,6 +36,29 @@ class HomePage extends StatelessWidget {
           )
         ],
       ),
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: primaryColor,
+          unselectedItemColor: Colors.black,
+          showUnselectedLabels: true,
+          selectedLabelStyle: GoogleFonts.montserrat(
+              fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black),
+          unselectedLabelStyle: GoogleFonts.montserrat(
+              fontSize: 12, fontWeight: FontWeight.w400, color: Colors.black),
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
+              icon: Icon(
+                IconlyLight.home,
+              ),
+              label: 'Home',
+            ),
+            BottomNavigationBarItem(
+                icon: Icon(IconlyLight.paper), label: 'Article'),
+            BottomNavigationBarItem(
+                icon: Icon(IconlyLight.time_circle), label: 'History'),
+            BottomNavigationBarItem(
+                icon: Icon(IconlyLight.profile), label: 'Profile'),
+          ]),
     );
   }
 
@@ -209,9 +233,7 @@ class HomePage extends StatelessWidget {
                     ),
                     child: IconButton(
                       icon: Image.asset('assets/img/home/care.png'),
-                      onPressed: () {
-                        Navigator.pushNamed(context, '/self_care');
-                      },
+                      onPressed: () {},
                     )),
                 const Gap(4),
                 Text(
