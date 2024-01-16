@@ -15,7 +15,7 @@ class CounselingDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: ListView(children: [
+      body: ListView(padding: EdgeInsets.only(bottom: 65), children: [
         Container(
           color: Colors.white,
           padding: EdgeInsets.symmetric(horizontal: 25, vertical: 20),
@@ -32,7 +32,7 @@ class CounselingDetails extends StatelessWidget {
               Text('About Me', style: sectionHeader),
               const Gap(8),
               Text(
-                'Friska S.Psi adalah seorang psikolog berpengalaman dengan latar belakang pendidikan yang kuat di bidang psikologi klinis. Ia memegang gelar Magister Psikologi dan telah mendapatkan gelar doktor di bidang yang sama dari Universitas Psikologi Terkemuka',
+                'Friska S.Psi is an experienced psychologist with a strong educational background in clinical psychology. She holds a Masters degree in Psychology and has earned her doctorate in the same field from a reputable Psychology University',
                 textAlign: TextAlign.justify,
                 style: GoogleFonts.montserrat(
                   fontSize: 12,
@@ -51,11 +51,31 @@ class CounselingDetails extends StatelessWidget {
                   color: Color(0xFF878787),
                   fontWeight: FontWeight.w400,
                 ),
-              )
+              ),
             ],
           ),
         )
       ]),
+      floatingActionButton: Padding(
+        padding: EdgeInsets.symmetric(horizontal: 25, vertical: 5),
+        child: ElevatedButton(
+            onPressed: () {},
+            child: Text(
+              "Make an appointment",
+              style: GoogleFonts.montserrat(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white),
+            ),
+            style: ElevatedButton.styleFrom(
+                backgroundColor: primaryColor,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 25, vertical: 15),
+                minimumSize: Size(double.infinity, 36))),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
     );
   }
 
@@ -159,7 +179,7 @@ class CounselingDetails extends StatelessWidget {
                     fontWeight: FontWeight.w500),
               ),
               Text(
-                'Percintaan',
+                'Love',
                 style: GoogleFonts.montserrat(
                     color: Colors.black.withOpacity(0.7),
                     fontSize: 12,
