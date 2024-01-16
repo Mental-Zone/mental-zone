@@ -67,7 +67,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                     child: currentPage == 2 // Check if on IntroPage3
                         ? OutlinedButton(
                             onPressed: () {
-                              // Handle Login button press
+                              Navigator.pushNamed(context, '/Register');
                             },
                             style: OutlinedButton.styleFrom(
                               shape: RoundedRectangleBorder(
@@ -105,7 +105,7 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
                         ? ElevatedButton(
                             onPressed: () {
                               // Handle Register button press
-                              Navigator.pushNamed(context, '/home');
+                              Navigator.pushNamed(context, '/Login');
                             },
                             style: ElevatedButton.styleFrom(
                               shape: RoundedRectangleBorder(

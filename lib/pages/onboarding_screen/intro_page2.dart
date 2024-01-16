@@ -39,10 +39,10 @@ class IntroPage2 extends StatelessWidget {
                   ),
                 ),
                 //headline
-                Text("Teman AI Penuh Wawasan", style: headline),
+                Text("Build friendships with AI", style: headline),
                 //descriotion
                 Text(
-                  'Ceritakan keluhmu dengan teman AI yang cerdas dan penuh wawasan',
+                  'Unleash your concerns to a savvy AI confidant brimming with insights',
                   textAlign: TextAlign.center,
                   style: headlineParagraph,
                 )
