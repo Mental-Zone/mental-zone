@@ -8,6 +8,9 @@ import 'package:mental_zone/pages/registerScreen.dart';
 import 'package:mental_zone/pages/chat.dart';
 import 'package:mental_zone/pages/home.dart';
 import 'package:mental_zone/pages/self_care/self_care.dart';
+import 'package:mental_zone/pages/article/articleScreen.dart';
+import 'package:mental_zone/pages/article/bookmark.dart';
+import 'package:mental_zone/pages/article/detailartcle.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,6 +40,9 @@ class MyApp extends StatelessWidget {
           CounselingDetails.routeName: (context) => const CounselingDetails(),
           selfCarePage.routeName: (context) => const selfCarePage(),
           AppointmentPage.routeName: (context) => const AppointmentPage(),
+          articleScreen.routeName:(context) => const articleScreen(),
+          bookmarkScreen.routeName:(context) => const bookmarkScreen(),
+          detailsArticleScreen.routeName:(context) => const detailsArticleScreen()
         });
   }
 }
