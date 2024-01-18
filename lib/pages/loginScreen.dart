@@ -110,14 +110,19 @@ class _LoginScreenState extends State<LoginScreen>{
                     ),
                     child: Align(
                       alignment: Alignment.center,
-                      child: Text(
-                        'Login',
-                        textAlign: TextAlign.center,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 14,
-                          fontFamily: 'Montserrat',
-                          fontWeight: FontWeight.w600,
+                      child: GestureDetector(
+                          onTap: () {
+                            Navigator.pushNamed(context, '/home');
+                          },
+                          child: Text(
+                          'Login',
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 14,
+                            fontFamily: 'Montserrat',
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                     )

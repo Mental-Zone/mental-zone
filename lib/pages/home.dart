@@ -58,7 +58,13 @@ class HomePage extends StatelessWidget {
                 icon: Icon(IconlyLight.time_circle), label: 'History'),
             BottomNavigationBarItem(
                 icon: Icon(IconlyLight.profile), label: 'Profile'),
-          ]),
+          ],
+          onTap: (int index) {
+            if (index == 1) {
+              Navigator.pushNamed(context, '/articlescreen');
+            }
+          },
+      ),
     );
   }
 
