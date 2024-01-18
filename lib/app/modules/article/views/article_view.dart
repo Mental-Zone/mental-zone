@@ -226,8 +226,7 @@ class _articleScreenState extends State<articleScreen> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(
-                              context, '/article/detailarticle');
+                          Get.offAllNamed(Routes.ARTICLE_DETAILS);
                         },
                         child: Container(
                           constraints: BoxConstraints(maxWidth: 180),

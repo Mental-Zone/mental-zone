@@ -1,9 +1,11 @@
 import 'package:get/get.dart';
-import 'package:menzo/app/modules/bookmark/views/bookmark.dart';
 
 import '../modules/article/bindings/article_binding.dart';
 import '../modules/article/views/article_view.dart';
+import '../modules/articleDetails/bindings/article_details_binding.dart';
+import '../modules/articleDetails/views/article_details_view.dart';
 import '../modules/bookmark/bindings/bookmark_binding.dart';
+import '../modules/bookmark/views/bookmark.dart';
 import '../modules/chatbot/bindings/chatbot_binding.dart';
 import '../modules/chatbot/views/chatbot_view.dart';
 import '../modules/counseling/bindings/counseling_binding.dart';
@@ -92,6 +94,11 @@ class AppPages {
       name: _Paths.BOOKMARK,
       page: () => const bookmarkScreen(),
       binding: BookmarkBinding(),
+    ),
+    GetPage(
+      name: _Paths.ARTICLE_DETAILS,
+      page: () => const detailsArticleScreen(),
+      binding: ArticleDetailsBinding(),
     ),
   ];
 }
