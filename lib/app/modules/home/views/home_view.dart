@@ -185,7 +185,7 @@ class HomeView extends GetView<HomeController> {
                     child: IconButton(
                       icon: Image.asset('assets/img/home/menzai.png'),
                       onPressed: () {
-                        Navigator.pushNamed(context, '/menzai');
+                        Get.offAllNamed(Routes.CHATBOT);
                       },
                     )),
                 const Gap(4),

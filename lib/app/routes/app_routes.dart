@@ -10,6 +10,7 @@ abstract class Routes {
   static const COUNSELING = _Paths.COUNSELING;
   static const COUNSELING_DETAILS = _Paths.COUNSELING_DETAILS;
   static const COUNSELING_APPOINTMENT = _Paths.COUNSELING_APPOINTMENT;
+  static const CHATBOT = _Paths.CHATBOT;
 }
 
 abstract class _Paths {
@@ -21,4 +22,5 @@ abstract class _Paths {
   static const COUNSELING = '/counseling';
   static const COUNSELING_DETAILS = '/counseling-details';
   static const COUNSELING_APPOINTMENT = '/counseling-appointment';
+  static const CHATBOT = '/chatbot';
 }

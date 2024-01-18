@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/chatbot/bindings/chatbot_binding.dart';
+import '../modules/chatbot/views/chatbot_view.dart';
 import '../modules/counseling/bindings/counseling_binding.dart';
 import '../modules/counseling/views/counseling_view.dart';
 import '../modules/counselingAppointment/bindings/counseling_appointment_binding.dart';
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.COUNSELING_APPOINTMENT,
       page: () => const CounselingAppointmentView(),
       binding: CounselingAppointmentBinding(),
+    ),
+    GetPage(
+      name: _Paths.CHATBOT,
+      page: () => const ChatPage(),
+      binding: ChatbotBinding(),
     ),
   ];
 }
