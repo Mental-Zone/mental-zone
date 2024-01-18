@@ -212,7 +212,9 @@ class HomeView extends GetView<HomeController> {
                     ),
                     child: IconButton(
                       icon: Image.asset('assets/img/home/care.png'),
-                      onPressed: () {},
+                      onPressed: () {
+                        Get.offAllNamed(Routes.SELF_CARE);
+                      },
                     )),
                 const Gap(4),
                 Text(
