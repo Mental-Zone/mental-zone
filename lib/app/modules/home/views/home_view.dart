@@ -36,29 +36,6 @@ class HomeView extends GetView<HomeController> {
           )
         ],
       ),
-      bottomNavigationBar: BottomNavigationBar(
-          type: BottomNavigationBarType.fixed,
-          selectedItemColor: primaryColor,
-          unselectedItemColor: Colors.black,
-          showUnselectedLabels: true,
-          selectedLabelStyle: GoogleFonts.montserrat(
-              fontSize: 12, fontWeight: FontWeight.w600, color: Colors.black),
-          unselectedLabelStyle: GoogleFonts.montserrat(
-              fontSize: 12, fontWeight: FontWeight.w400, color: Colors.black),
-          items: const <BottomNavigationBarItem>[
-            BottomNavigationBarItem(
-              icon: Icon(
-                IconlyLight.home,
-              ),
-              label: 'Home',
-            ),
-            BottomNavigationBarItem(
-                icon: Icon(IconlyLight.paper), label: 'Article'),
-            BottomNavigationBarItem(
-                icon: Icon(IconlyLight.time_circle), label: 'History'),
-            BottomNavigationBarItem(
-                icon: Icon(IconlyLight.profile), label: 'Profile'),
-          ]),
     );
   }
 

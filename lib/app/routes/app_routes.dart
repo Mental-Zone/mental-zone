@@ -13,6 +13,7 @@ abstract class Routes {
   static const CHATBOT = _Paths.CHATBOT;
   static const SELF_CARE = _Paths.SELF_CARE;
   static const ARTICLE = _Paths.ARTICLE;
+  static const LANDING_PAGE = _Paths.LANDING_PAGE;
 }
 
 abstract class _Paths {
@@ -27,4 +28,5 @@ abstract class _Paths {
   static const CHATBOT = '/chatbot';
   static const SELF_CARE = '/self-care';
   static const ARTICLE = '/article';
+  static const LANDING_PAGE = '/landing-page';
 }
