@@ -1,5 +1,8 @@
 
 # Menzo - Mental Health Apps
+<div align="center">
+  <img src="assets/img/menzobanner.png" alt="Deskripsi gambar">
+</div>
 ## Description
 
 
