@@ -1,10 +1,13 @@
-
-# Menzo - Mental Health Apps
 <div align="center">
   <img src="assets/img/menzobanner.png" alt="Deskripsi gambar">
 </div>
-## Description
 
+# Menzo - Mental Health Apps
+## Description Problem Statement
+According to data from the Indonesian Ministry of Health in 2018, at least 1 in 16 people aged 15 and over were diagnosed with depression. Depression prevalence is 6.1% with a total of 12,747,896 people. And 1 in 10 people aged 15 and above experience Mental Emotional Disorder with a prevalence of 9.8% with a total of 20,480,227 people. And 2 out of 3 children aged 12 - 17 years have experienced violence and can be calculated as a prevalence of 3.7% and 1.4% of them have suicidal thoughts. In our new law, Law No. 17 of 2023, it has been interpreted that mental health is part of health. And efforts to achieve optimal mental health must be carried out in a promotive, preventive, curative and rehabilitative manner.
+
+## DMenzo Apps
+Menzo is a revolutionary application specially designed to help individuals to manage their mental health in an innovative and engaging way. By providing a unique combination of guided meditation, education about mental health in the form of a blog, and fast access to counseling services from psychologists. In the Menzo application there is also a Community Group which can be used to embrace each other by sharing stories and solutions faced by each individual through the Article Blog media. On the other hand, apart from being able to consult with a psychologist, Menzo also provides a Chat with AI feature if users don't want to talk to other people or are still afraid of sharing their stories. Menzo is a digital friend who guides individuals, especially teenagers, through their mental health journey. Because there are many stories of suicide in teenagers due to mental illness, now Menzo is here as a solution to help people control their mental health.
 
 <a name="readme-top"></a>
 
