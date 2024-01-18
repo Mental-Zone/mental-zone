@@ -95,18 +95,45 @@ Menzo is a revolutionary application specially designed to help individuals to m
 <img src="assets/img/screenshoot/tampilan3.png" alt="Deskripsi gambar">
 <img src="assets/img/screenshoot/tampilan4.png" alt="Deskripsi gambar">
 
-![Screenshot_1705071958](https://github.com/Mental-Zone/mental-zone/assets/67546532/367c7eac-c616-4e80-b784-b4175a6c12b7)
-
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Built With
 
-![Flutter]
+# Flutter Bard and Makersuite
+
+[![Flutter](https://img.shields.io/badge/Flutter-2.8.0-blue.svg?logo=flutter)](https://flutter.dev/)
+[![Dart](https://img.shields.io/badge/Dart-2.15.0-blue.svg?logo=dart)](https://dart.dev/)
+
+## Description
+
+This project uses Flutter and Dart for Bard and Makersuite implementation. Bard is a <short description of Bard>, while Makersuite is <short description of Makersuite>.
+
+## Instalasi
+
+Make sure Flutter and Dart are installed on your machine. If not, follow the installation guides at [Flutter](https://flutter.dev/docs/get-started/install) and [Dart](https://dart.dev/get-dart).
+
+1. Clone this repository:
+
+    ```bash
+    git clone https://github.com/Mental-Zone/mental-zone.git
+    ```
+
+2. Move to the project directory:
+
+    ```bash
+    cd namaproject
+    ```
+
+3. Run the application:
+
+    ```bash
+    flutter run
+    ```
+
+## Penggunaan
+
+A description of how to use this application or framework. Provide usage examples or basic commands.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-[Flutter]: https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white
