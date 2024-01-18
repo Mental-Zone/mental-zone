@@ -131,7 +131,7 @@ Make sure Flutter and Dart are installed on your machine. If not, follow the ins
     flutter run
     ```
 
-## Penggunaan
+## Use the application
 
 A description of how to use this application or framework. Provide usage examples or basic commands.
 
