@@ -1,7 +1,9 @@
 import 'package:get/get.dart';
+import 'package:menzo/app/modules/bookmark/views/bookmark.dart';
 
 import '../modules/article/bindings/article_binding.dart';
 import '../modules/article/views/article_view.dart';
+import '../modules/bookmark/bindings/bookmark_binding.dart';
 import '../modules/chatbot/bindings/chatbot_binding.dart';
 import '../modules/chatbot/views/chatbot_view.dart';
 import '../modules/counseling/bindings/counseling_binding.dart';
@@ -78,13 +80,18 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.ARTICLE,
-      page: () => const ArticleView(),
+      page: () => const articleScreen(),
       binding: ArticleBinding(),
     ),
     GetPage(
       name: _Paths.LANDING_PAGE,
       page: () => LandingPageView(),
       binding: LandingPageBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOOKMARK,
+      page: () => const bookmarkScreen(),
+      binding: BookmarkBinding(),
     ),
   ];
 }

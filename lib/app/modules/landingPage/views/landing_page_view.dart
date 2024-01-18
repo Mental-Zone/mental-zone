@@ -42,7 +42,7 @@ class LandingPageView extends GetView<LandingPageController> {
         body: PageView(
           controller: controller.pageController,
           physics: NeverScrollableScrollPhysics(),
-          children: [HomeView(), ArticleView()],
+          children: [HomeView(), articleScreen()],
         ));
   }
 

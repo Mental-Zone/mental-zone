@@ -1,24 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconly/iconly.dart';
 import 'package:menzo/app/routes/app_pages.dart';
-import 'package:menzo/app/shared/theme/color.dart';
-import 'package:menzo/app/shared/theme/font.dart';
 
-import '../controllers/article_controller.dart';
+import '../../../shared/theme/color.dart';
+import '../../../shared/theme/font.dart';
 
-class articleScreen extends StatefulWidget {
-  static const routeName = '/articlescreen';
-  const articleScreen({super.key});
+class bookmarkScreen extends StatefulWidget {
+  const bookmarkScreen({super.key});
 
   @override
-  State<articleScreen> createState() => _articleScreenState();
+  State<bookmarkScreen> createState() => _bookmarkScreenState();
 }
 
-class _articleScreenState extends State<articleScreen> {
+class _bookmarkScreenState extends State<bookmarkScreen> {
   int _currentIndex = 1;
 
   @override
@@ -34,14 +31,41 @@ class _articleScreenState extends State<articleScreen> {
               children: [
                 _navRow(),
                 const Gap(37),
-                _searchBar(),
-                const Gap(21),
                 _mainArticle(context),
+                const Gap(21),
               ],
             ),
           )
         ],
       ),
+    );
+  }
+
+  // navbar
+  Row _navRow() {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        GestureDetector(
+          onTap: () {
+            Get.offAllNamed(Routes.LANDING_PAGE);
+          },
+          child: Icon(Icons.arrow_back),
+        ),
+        Text(
+          'Article',
+          style: sectionHeader,
+        ),
+        Container(
+          width: 50,
+          height: 50,
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(8),
+              border: Border.all(
+                  color: Colors.black.withOpacity(0.08), width: 0.4)),
+          child: Icon(Icons.bookmark),
+        )
+      ],
     );
   }
 
@@ -57,27 +81,17 @@ class _articleScreenState extends State<articleScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
-                    "Read Menzo's article!",
-                    style: sectionHeader,
-                  ),
-                  const Gap(10),
-                  Text(
-                    'It might match your search',
-                    style: paragraph,
-                  ),
-                  const Gap(37),
-                  _articleContainer(),
-                  const Gap(10),
-                  _article2Container(),
-                  const Gap(10),
-                  _article3Container(),
-                  const Gap(10),
-                  _article4Container(),
-                  const Gap(10),
-                  _article2Container(),
-                  const Gap(10),
-                  _article3Container(),
+                  _bookmark1Container(),
+                  const Gap(18),
+                  _bookmark2Container(),
+                  const Gap(18),
+                  _bookmark3Container(),
+                  const Gap(18),
+                  _bookmark4Container(),
+                  const Gap(18),
+                  _bookmark1Container(),
+                  const Gap(18),
+                  _bookmark2Container(),
                 ],
               )
             ],
@@ -87,99 +101,8 @@ class _articleScreenState extends State<articleScreen> {
     );
   }
 
-  // top navbar
-  Row _navRow() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        GestureDetector(
-          onTap: () {},
-          child: Icon(
-            Icons.arrow_back,
-            color: Colors.white,
-          ),
-        ),
-        Text(
-          'Article',
-          style: sectionHeader,
-        ),
-        GestureDetector(
-          onTap: () {
-            Get.offAllNamed(Routes.BOOKMARK);
-          },
-          child: Container(
-            width: 50,
-            height: 50,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(
-                color: Colors.black.withOpacity(0.08),
-                width: 0.4,
-              ),
-            ),
-            child: Icon(Icons.bookmark),
-          ),
-        ),
-      ],
-    );
-  }
-
-  // search bar row
-  Row _searchBar() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Flexible(
-          child: Container(
-            height: 50,
-            decoration: BoxDecoration(boxShadow: [
-              BoxShadow(
-                color: Colors.black.withOpacity(0.05),
-                blurRadius: 15,
-                offset: Offset(0, 9),
-              ),
-            ]),
-            child: TextField(
-              decoration: InputDecoration(
-                hintText: "Search for articles",
-                hintStyle: GoogleFonts.montserrat(
-                  fontSize: 14,
-                  fontWeight: FontWeight.w400,
-                  color: Colors.black.withOpacity(0.5),
-                ),
-                prefixIcon: Icon(Icons.search_rounded),
-                prefixIconColor: Colors.black.withOpacity(0.5),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8),
-                  borderSide: BorderSide.none,
-                ),
-                filled: true,
-                fillColor: Colors.white,
-              ),
-            ),
-          ),
-        ),
-        const Gap(14),
-        Container(
-          width: 50,
-          height: 50,
-          decoration: BoxDecoration(
-              color: primaryColor,
-              borderRadius: BorderRadius.circular(8),
-              border: Border.all(
-                  color: Colors.black.withOpacity(0.08), width: 0.4)),
-          child: IconButton(
-            icon: Icon(Icons.filter_list),
-            color: Colors.white,
-            onPressed: () {},
-          ),
-        )
-      ],
-    );
-  }
-
-  // container article
-  Container _articleContainer() {
+  // bookmarks 1
+  Container _bookmark1Container() {
     return Container(
       width: 310,
       height: 84,
@@ -226,8 +149,7 @@ class _articleScreenState extends State<articleScreen> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Navigator.pushNamed(
-                              context, '/article/detailarticle');
+                          Navigator.pushNamed(context, '/');
                         },
                         child: Container(
                           constraints: BoxConstraints(maxWidth: 180),
@@ -299,8 +221,8 @@ class _articleScreenState extends State<articleScreen> {
     );
   }
 
-  // article 2
-  Container _article2Container() {
+  // bookmarks 2
+  Container _bookmark2Container() {
     return Container(
       width: 310,
       height: 84,
@@ -418,8 +340,8 @@ class _articleScreenState extends State<articleScreen> {
     );
   }
 
-  // article 3
-  Container _article3Container() {
+  // bookmarks 3
+  Container _bookmark3Container() {
     return Container(
       width: 310,
       height: 84,
@@ -537,8 +459,8 @@ class _articleScreenState extends State<articleScreen> {
     );
   }
 
-  // article 4
-  Container _article4Container() {
+  // bookmarks 4
+  Container _bookmark4Container() {
     return Container(
       width: 310,
       height: 84,

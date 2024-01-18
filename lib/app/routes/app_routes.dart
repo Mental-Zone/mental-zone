@@ -14,6 +14,7 @@ abstract class Routes {
   static const SELF_CARE = _Paths.SELF_CARE;
   static const ARTICLE = _Paths.ARTICLE;
   static const LANDING_PAGE = _Paths.LANDING_PAGE;
+  static const BOOKMARK = _Paths.BOOKMARK;
 }
 
 abstract class _Paths {
@@ -29,4 +30,5 @@ abstract class _Paths {
   static const SELF_CARE = '/self-care';
   static const ARTICLE = '/article';
   static const LANDING_PAGE = '/landing-page';
+  static const BOOKMARK = '/bookmark';
 }

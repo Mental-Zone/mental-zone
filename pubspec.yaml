@@ -31,5 +31,6 @@ flutter:
     - assets/img/self_care/
     - assets/img/counseling/
     - assets/img/home/
+    - assets/img/article/
   uses-material-design: true
 

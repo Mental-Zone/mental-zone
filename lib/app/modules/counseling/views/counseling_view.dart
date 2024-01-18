@@ -206,7 +206,7 @@ class CounselingView extends GetView<CounselingController> {
       children: [
         GestureDetector(
             onTap: () {
-              Get.offAllNamed(Routes.HOME);
+              Get.offAllNamed(Routes.LANDING_PAGE);
             },
             child: Icon(Icons.arrow_back)),
         Text(

@@ -200,7 +200,7 @@ class _ChatPageState extends State<ChatPage> {
       children: [
         GestureDetector(
             onTap: () {
-              Get.offAllNamed(Routes.HOME);
+              Get.offAllNamed(Routes.LANDING_PAGE);
             },
             child: Container(
                 height: 50, width: 50, child: Icon(Icons.arrow_back))),
