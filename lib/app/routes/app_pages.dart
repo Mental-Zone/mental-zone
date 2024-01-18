@@ -1,5 +1,7 @@
 import 'package:get/get.dart';
 
+import '../modules/article/bindings/article_binding.dart';
+import '../modules/article/views/article_view.dart';
 import '../modules/chatbot/bindings/chatbot_binding.dart';
 import '../modules/chatbot/views/chatbot_view.dart';
 import '../modules/counseling/bindings/counseling_binding.dart';
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.SELF_CARE,
       page: () => const SelfCareView(),
       binding: SelfCareBinding(),
+    ),
+    GetPage(
+      name: _Paths.ARTICLE,
+      page: () => const ArticleView(),
+      binding: ArticleBinding(),
     ),
   ];
 }
