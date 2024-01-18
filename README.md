@@ -90,10 +90,10 @@ Menzo is a revolutionary application specially designed to help individuals to m
 
 ## About The Project
 
-<img src="assets/img/screenshoot/screenshoot1.jpeg" alt="Deskripsi gambar">
-<img src="assets/img/screenshoot/screenshoot2.jpeg" alt="Deskripsi gambar">
-<img src="assets/img/screenshoot/screenshoot3.jpeg" alt="Deskripsi gambar">
-<img src="assets/img/screenshoot/screenshoot4.jpeg" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/tampilan1.png" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/tampilan2.png" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/tampilan3.png" alt="Deskripsi gambar">
+<img src="assets/img/screenshoot/tampilan4.png" alt="Deskripsi gambar">
 
 ![Screenshot_1705071958](https://github.com/Mental-Zone/mental-zone/assets/67546532/367c7eac-c616-4e80-b784-b4175a6c12b7)
 
