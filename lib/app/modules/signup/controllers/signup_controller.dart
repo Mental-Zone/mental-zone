@@ -1,23 +1,15 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class SignupController extends GetxController {
-  //TODO: Implement SignupController
-
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
-  }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
+  TextEditingController nameC = TextEditingController(text: 'Budi');
+  TextEditingController emailC = TextEditingController();
+  TextEditingController passC = TextEditingController(text: '123123');
 
   @override
   void onClose() {
+    emailC.dispose();
+    passC.dispose();
     super.onClose();
   }
-
-  void increment() => count.value++;
 }

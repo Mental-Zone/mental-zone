@@ -11,17 +11,17 @@ class AuthController extends GetxController {
       UserCredential myUser = await _authC.createUserWithEmailAndPassword(
           email: emailAddress, password: password);
 
-      await myUser.user!.sendEmailVerification();
-      Get.defaultDialog(
-        title: "Verify your email",
-        middleText:
-            "We have sent you a verification email to $emailAddress. Please verify your email to continue.",
-        onConfirm: () {
-          Get.back();
-          Get.back();
-        },
-        textConfirm: "OK",
-      );
+      // await myUser.user!.sendEmailVerification();
+      // Get.defaultDialog(
+      //   title: "Verify your email",
+      //   middleText:
+      //       "We have sent you a verification email to $emailAddress. Please verify your email to continue.",
+      //   onConfirm: () {
+      //     Get.back();
+      //     Get.back();
+      //   },
+      //   textConfirm: "OK",
+      // );
     } on FirebaseAuthException catch (e) {
       if (e.code == 'weak-password') {
         print('the password is too weak');
@@ -44,14 +44,14 @@ class AuthController extends GetxController {
       UserCredential myUser = await _authC.signInWithEmailAndPassword(
           email: emailAddress, password: password);
 
-      if (myUser.user!.emailVerified) {
-        Get.offAllNamed(Routes.HOME);
-      } else {
-        Get.defaultDialog(
-          title: "Verify your email",
-          middleText: "Please do a verification on your email to continue.",
-        );
-      }
+      // if (myUser.user!.emailVerified) {
+      //   Get.offAllNamed(Routes.HOME);
+      // } else {
+      //   Get.defaultDialog(
+      //     title: "Verify your email",
+      //     middleText: "Please do a verification on your email to continue.",
+      //   );
+      // }
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         print('No user found for that email.');

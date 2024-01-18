@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:menzo/app/controllers/auth_controller.dart';
 import 'package:menzo/app/routes/app_pages.dart';
 
 import '../controllers/signup_controller.dart';
 
 class SignupView extends GetView<SignupController> {
-  const SignupView({Key? key}) : super(key: key);
+  final authC = Get.find<AuthController>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -49,7 +50,7 @@ class SignupView extends GetView<SignupController> {
                     Column(
                       children: [
                         TextField(
-                          keyboardType: TextInputType.emailAddress,
+                          controller: controller.nameC,
                           onChanged: (value) {
                             // name = value;
                           },
@@ -75,10 +76,9 @@ class SignupView extends GetView<SignupController> {
                         ),
                         SizedBox(height: 10.0),
                         TextField(
-                          obscureText: true,
-                          keyboardType: TextInputType.visiblePassword,
+                          controller: controller.emailC,
                           onChanged: (value) {
-                            // email = value;
+                            // name = value;
                           },
                           decoration: InputDecoration(
                             hintText: 'Email',
@@ -97,13 +97,14 @@ class SignupView extends GetView<SignupController> {
                               fontWeight: FontWeight.w400,
                               height: 0,
                             ),
-                            // errorText: _wrongEmail ? emailText : null,
+                            // errorText: wrongName ? nameText : null,
                           ),
                         ),
                         SizedBox(height: 10.0),
                         TextField(
                           obscureText: true,
                           keyboardType: TextInputType.visiblePassword,
+                          controller: controller.passC,
                           onChanged: (value) {
                             // password = value;
                           },
@@ -158,28 +159,35 @@ class SignupView extends GetView<SignupController> {
                     ),
                     // COLUMN FIELD RAISE
                     // BUTTON RAISE
-                    Container(
-                        width: 338,
-                        height: 50,
-                        decoration: ShapeDecoration(
-                          color: Color(0xFF1D62FC),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(12),
-                          ),
-                        ),
-                        child: Align(
-                          alignment: Alignment.center,
-                          child: Text(
-                            'Register',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 14,
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w600,
+                    GestureDetector(
+                      onTap: () {
+                        print("TEST");
+                        authC.signup(
+                            controller.emailC.text, controller.passC.text);
+                        Get.offAllNamed(Routes.LOGIN);
+                      },
+                      child: Container(
+                          width: 338,
+                          height: 50,
+                          decoration: ShapeDecoration(
+                            color: Color(0xFF1D62FC),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12),
                             ),
                           ),
-                        )),
+                          child: Align(
+                            alignment: Alignment.center,
+                            child: Text(
+                              'Register',
+                              textAlign: TextAlign.center,
+                              style: GoogleFonts.montserrat(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          )),
+                    ),
                     // AKHIR BUTTON RAISE
                     // LINE PEMBATAS
                     Row(

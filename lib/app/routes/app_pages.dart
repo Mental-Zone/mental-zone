@@ -1,5 +1,11 @@
 import 'package:get/get.dart';
 
+import '../modules/counseling/bindings/counseling_binding.dart';
+import '../modules/counseling/views/counseling_view.dart';
+import '../modules/counselingAppointment/bindings/counseling_appointment_binding.dart';
+import '../modules/counselingAppointment/views/counseling_appointment_view.dart';
+import '../modules/counselingDetails/bindings/counseling_details_binding.dart';
+import '../modules/counselingDetails/views/counseling_details_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
@@ -19,7 +25,7 @@ class AppPages {
   static final routes = [
     GetPage(
       name: _Paths.HOME,
-      page: () => const HomeView(),
+      page: () => HomeView(),
       binding: HomeBinding(),
     ),
     GetPage(
@@ -34,8 +40,23 @@ class AppPages {
     ),
     GetPage(
       name: _Paths.SIGNUP,
-      page: () => const SignupView(),
+      page: () => SignupView(),
       binding: SignupBinding(),
+    ),
+    GetPage(
+      name: _Paths.COUNSELING,
+      page: () => CounselingView(),
+      binding: CounselingBinding(),
+    ),
+    GetPage(
+      name: _Paths.COUNSELING_DETAILS,
+      page: () => const CounselingDetailsView(),
+      binding: CounselingDetailsBinding(),
+    ),
+    GetPage(
+      name: _Paths.COUNSELING_APPOINTMENT,
+      page: () => const CounselingAppointmentView(),
+      binding: CounselingAppointmentBinding(),
     ),
   ];
 }
